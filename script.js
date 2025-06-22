@@ -42,17 +42,17 @@ buttons.addEventListener("click",function(event){
 
 
 if(userSelection === computerSelection){
-  winner.innerText ="ITS A TIE !"
+  winner.innerText ="Ita a Tie !"
   winner.style.backgroundColor ="grey"
 }else if((userSelection === "rock"&& computerSelection ==="scissor") ||
 (userSelection === "paper" && computerSelection === "rock")||
 (userSelection ==="scissor"&& computerSelection==="paper")){
-  winner.innerText ='you win!'
+  winner.innerText ='You wins !'
   winner.style.backgroundColor="rgb(31, 196, 59)"
   userScore++
   usercount.innerText =`You: ${userScore}`
 }else{
-  winner.innerText="computer wins !"
+  winner.innerText="Computer wins !"
   winner.style.backgroundColor="rgb(237, 91, 65)"
   computerScore++
   computercount.innerText =`Computer : ${computerScore}`
